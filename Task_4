@@ -1,0 +1,25 @@
+package task_4;
+import java.util.Scanner;
+public class Task_4 {
+    public static void main(String[] args) {
+       methods m = new methods(); 
+       Scanner s = new Scanner(System.in);
+       float result,price = 0,subtraction = 0,max_profit = 0;
+       int n;int x;
+       System.out.println("Number of days :");
+       x = s.nextInt();
+       n = x-1;
+       System.out.println("___");
+       System.out.println("Inputs :");
+       float []days = new float[x];
+       for(int i = 0;i<x;i++){
+           price = s.nextFloat();
+           days[i] = price;
+       }
+       System.out.println("___");
+       result = m.getMax(n, 0,0,0,0, days);
+       System.out.println("Output :");
+       System.out.println(result);
+    }
+    
+}
