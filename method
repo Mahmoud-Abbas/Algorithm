@@ -1,5 +1,4 @@
-package task_4;
-public class methods {
+
     public float getMax(int n,float current_price,float difference,float subtraction,float max_profit,float days[]){
         for(int k=n;k>0;k--){
             if(days[k]>=current_price){
@@ -14,4 +13,4 @@ public class methods {
        }
         return max_profit;
     }
-}
+
